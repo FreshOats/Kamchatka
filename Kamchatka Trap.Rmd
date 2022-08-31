@@ -1,0 +1,18 @@
+---
+title: "Kamchatka Trap!"
+author: "Justin Papreck"
+date: "August 27, 2018"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r leaf, echo = FALSE}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%  
+  addMarkers(lat=54.753333, lng=160.526667, popup="You are in the middle of Kronotsky Volcano in the Kamchatka Peninsula of Russia. Good luck getting out!")
+my_map  
+``` 
